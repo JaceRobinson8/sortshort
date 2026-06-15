@@ -8,7 +8,12 @@ authors = [
     { name = "Jace Robinson", email = "jaceman21@gmail.com" },
 ]
 license = "MIT"
-dependencies = []
+dependencies = [
+    "pygame-ce>=2.5.7",
+]
+
+[project.scripts]
+sortshort = "sortshort.__main__:main"
 
 [build-system]
 requires = ["hatchling"]
