@@ -1,0 +1,38 @@
+[project]
+name = "sortshort"
+version = "0.1.0"
+description = "Sorting Visualization"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [
+    { name = "Jace Robinson", email = "jaceman21@gmail.com" },
+]
+license = "MIT"
+dependencies = []
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "ruff>=0.6",
+    "mypy>=1.11",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --cov=sortshort --cov-report=term-missing"
