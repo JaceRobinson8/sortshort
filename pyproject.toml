@@ -5,7 +5,7 @@ description = "Sorting Visualization"
 readme = "README.md"
 requires-python = ">=3.13"
 authors = [
-    { name = "Jace Robinson", email = "jaceman21@gmail.com" },
+    { name = "Jace Robinson" },
 ]
 license = "MIT"
 dependencies = [
