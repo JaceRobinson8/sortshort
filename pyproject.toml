@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-sortshort = "sortshort.__main__:main"
+sortshort = "sortshort.cli:main"
 
 [build-system]
 requires = ["hatchling"]
