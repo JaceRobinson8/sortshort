@@ -5,8 +5,8 @@ from __future__ import annotations
 import pytest
 from typer.testing import CliRunner
 
-from sortshort.__main__ import app
 from sortshort.algorithms import ALGORITHMS
+from sortshort.cli import app
 
 runner = CliRunner()
 
@@ -82,7 +82,7 @@ def test_help_exits_cleanly() -> None:
 
 def test_main_invokes_app(monkeypatch: pytest.MonkeyPatch) -> None:
     # The `sortshort` entry point is `main`; verify it delegates to the Typer app.
-    import sortshort.__main__ as cli
+    import sortshort.cli as cli
 
     invoked = {}
     monkeypatch.setattr(cli, "app", lambda: invoked.setdefault("called", True))
