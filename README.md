@@ -13,6 +13,16 @@ bubble, insertion, selection, merge, quick, and heap sort animate a shuffled
 array as bars, with the active comparisons, swaps, and writes highlighted in
 real time.
 
+## Watch them run
+
+| Bubble | Insertion | Selection |
+| :---: | :---: | :---: |
+| ![Bubble sort](assets/bubble.gif) | ![Insertion sort](assets/insertion.gif) | ![Selection sort](assets/selection.gif) |
+| **Merge** | **Quick** | **Heap** |
+| ![Merge sort](assets/merge.gif) | ![Quick sort](assets/quick.gif) | ![Heap sort](assets/heap.gif) |
+
+<sub>Generated headlessly from the real renderer — regenerate with `uv run --group docs python scripts/record.py`.</sub>
+
 ## Run it
 
 ```bash

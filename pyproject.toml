@@ -28,6 +28,10 @@ dev = [
     "mypy>=1.11",
     "pre-commit>=4.6.0",
 ]
+# Only needed to regenerate the README animations (scripts/record.py).
+docs = [
+    "pillow>=10.0",
+]
 
 [tool.ruff]
 line-length = 88
